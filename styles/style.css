@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+
+img{
+    width:50%;
+    text-align: right;
+}
+:root{
+    --cor-principal:#888C03; 
+    --cor-texto: #000000;
+    --fonte-titulo: 'Frank Ruhl Libre', serif;
+}
+
+body{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+
+}
+h1{
+    color:azure
+}
+.container{
+    display: grid;
+    grid-template-columns: 150px 1fr 300px;
+    grid-template-rows: 150px 1fr 200px;
+}
+.itens{
+    border: 1px solid black;
+    min-height: 100px;
+    background-color: #024900;
+}
+
+/* Color Theme Swatches in Hex */
+.Terrosos--Verdes-claros-1-hex { color: #7E8A68; }
+.Terrosos--Verdes-claros-2-hex { color: #95A47B; }
+.Terrosos--Verdes-claros-3-hex { color: #A1B185; }
+.Terrosos--Verdes-claros-4-hex { color: #BDD09C; }
+.Terrosos--Verdes-claros-5-hex { color: #DBF0B4; }
+
+/* Color Theme Swatches in RGBA */
+.Terrosos--Verdes-claros-1-rgba { color: rgba(126, 137, 103, 1); }
+.Terrosos--Verdes-claros-2-rgba { color: rgba(149, 163, 123, 1); }
+.Terrosos--Verdes-claros-3-rgba { color: rgba(161, 177, 133, 1); }
+.Terrosos--Verdes-claros-4-rgba { color: rgba(188, 207, 156, 1); }
+.Terrosos--Verdes-claros-5-rgba { color: rgba(219, 239, 179, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Terrosos--Verdes-claros-1-hsla { color: hsla(0, 14, 47, 1); }
+.Terrosos--Verdes-claros-2-hsla { color: hsla(0, 18, 56, 1); }
+.Terrosos--Verdes-claros-3-hsla { color: hsla(0, 22, 60, 1); }
+.Terrosos--Verdes-claros-4-hsla { color: hsla(0, 35, 71, 1); }
+.Terrosos--Verdes-claros-5-hsla { color: hsla(0, 66, 82, 1); }
+
+#F2F2F2
+#9CA68D
+#828C5D
+#B5BF69
+#555934
