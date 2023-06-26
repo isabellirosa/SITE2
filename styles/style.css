@@ -21,17 +21,25 @@ h1{
 }
 .container{
     display: grid;
-    grid-template-columns: 150px 1fr 300px;
-    grid-template-rows: 150px 1fr 200px;
-    position: static;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px 1fr;
+
 }
 .itens{
     border: 1px solid black;
     min-height: 100px;
     background-color: #024900;
+
 }
 p{
-    size: 500px;
+    font-size: 50pt;
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
 }
 
 /* Color Theme Swatches in Hex */
@@ -55,7 +63,7 @@ p{
 .Terrosos--Verdes-claros-4-hsla { color: hsla(0, 35, 71, 1); }
 .Terrosos--Verdes-claros-5-hsla { color: hsla(0, 66, 82, 1); }
 
-#F2F2F2
+/*#F2F2F2
 #9CA68D
 #828C5D
 #B5BF69
