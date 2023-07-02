@@ -28,12 +28,12 @@ h1{
 .container{
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 65px;
 
 }
 .itens{
     border: 1px solid black;
-    min-height: 100px;
+    min-height: 65px;
     background-color: #024900;
 
 }
@@ -47,7 +47,40 @@ header{
     right: 0px;
     
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+
+.noticias-principais{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px 100px;
+    margin-top: 100px;
+}
+.ultimas-noticias{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+
+    margin: 15px 75px
+}
+
+
+#noticia-grande{
+    border: 1px solid black;
+    height: 1000px;
+}
+
+
+#noticia-piquena div{
+    border: 0.5px solid black;
+    height: 200px;
+}
 /* Color Theme Swatches in Hex */
 .Terrosos--Verdes-claros-1-hex { color: #7E8A68; }
 .Terrosos--Verdes-claros-2-hex { color: #95A47B; }
