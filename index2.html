@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exemplo de layout</title>
+
+
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       header{
+           display: grid;
+           grid-template-columns: 150px 1fr 100px;
+       }
+       div{
+           height: 100px;
+       }
+       #titulo{
+           border: 1px solid black;
+           display: grid;
+           grid-template-columns: 3fr 1fr;
+       }
+       .noticias-principais{
+           border: 2px solid black;
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           margin: 15px 100px;
+       }
+       .ultimas-noticias{
+           display: grid;
+           grid-template-columns: 3fr 1fr;
+
+
+           margin: 15px 75px
+       }
+
+
+       #noticia-grande{
+           border: 1px solid black;
+           height: 1000px;
+       }
+
+
+       #noticia-piquena div{
+           border: 0.5px solid black;
+           height: 200px;
+       }
+   </style>
+
+
+</head>
+<body>
+   <header>
+       <div></div>
+       <div id="titulo">
+           <p>Palavra A</p>
+           <p>Palavra B</p>
+
+
+       </div>
+       <div></div>
+   </header>
+
+
+   <main>
+       <section class="noticias-principais">
+           <div></div>
+           <div></div>
+           <div></div>
+
+
+       </section>
+
+
+       <section class="ultimas-noticias">
+           <div id="noticia-grande">
+           </div>
+           <div id="noticia-piquena">
+               <div>
+                  
+               </div>
+               <div>
+
+
+               </div>
+               <div>
+
+
+               </div>
+               <div>
+
+
+               </div>
+               <div>
+
+
+               </div>
+           </div>
+       </section>
+
+
+   </main>
+  
+</body>
+</html>/

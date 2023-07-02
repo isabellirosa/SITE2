@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
 img{
-    width:50%;
     text-align: right;
+    display: block;
 }
 :root{
     --cor-principal:#888C03; 
@@ -16,13 +17,18 @@ body{
     color: var(--cor-texto);
 
 }
+.jornalbr{
+    color: white;
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+}
 h1{
     color:azure
 }
 .container{
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr;
 
 }
 .itens{
