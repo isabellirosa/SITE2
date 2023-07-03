@@ -23,18 +23,24 @@ body{
     font-family: 'Libre Baskerville', serif;
 }
 h1{
-    color:azure
+    color:azure;
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+
 }
 .container{
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 65px;
+    justify-content: center;
+    align-items: center;
+    background-color: #024900;
 
 }
 .itens{
     border: 1px solid black;
-    min-height: 65px;
-    background-color: #024900;
+   
+    
 
 }
 p{
@@ -53,7 +59,17 @@ header{
     box-sizing: border-box;
 }
 
-
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo > span{
+   
+    width: 80px;
+    color: white;
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+}
 
 .noticias-principais{
     border: 2px solid black;
@@ -81,6 +97,29 @@ header{
     border: 0.5px solid black;
     height: 200px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  .tópicos {
+  }
+
+  li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
 /* Color Theme Swatches in Hex */
 .Terrosos--Verdes-claros-1-hex { color: #7E8A68; }
 .Terrosos--Verdes-claros-2-hex { color: #95A47B; }
