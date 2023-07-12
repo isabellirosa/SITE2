@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 img{
     text-align: right;
     display: block;
@@ -28,6 +37,18 @@ h1{
     font-family: 'Libre Baskerville', serif;
     margin-left: 40px;
 }
+input[type="checkbox"]{
+    display:none
+}
+nav{
+    background-color: rgb(122, 100, 248);
+    width: 300px;
+    height: 100%;
+}
+#menu-a > a{
+    display:block;
+}
+
 .container{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -71,6 +92,7 @@ header{
     font-family: 'Libre Baskerville', serif;
 }
 
+
 .noticias-principais{
     border: 2px solid black;
     display: grid;
@@ -109,10 +131,10 @@ margin-top: 10px;
 margin-left: 10px;
 border-radius: 5px;
 }
-#noticia-piquena img, a{
+#noticia-piquena > img > a{
     float: left
 }
-#noticia-piquena a{
+#noticia-piquena > a{
     margin-top: 20px;
     margin-left: 5px;
     color: black;
@@ -123,21 +145,20 @@ ul {
     padding: 0;
   }
   
-  li {
-    display: inline;
-  }
+ 
   .tópicos {
   }
 
   li, a {
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: rgb(255, 0, 0);
   }
 
   a:hover {
     color: yellow;
   }
+
 
 /* Color Theme Swatches in Hex */
 .Terrosos--Verdes-claros-1-hex { color: #7E8A68; }
