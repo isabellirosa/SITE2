@@ -26,7 +26,7 @@ h1{
     color:azure;
     text-align: right;
     font-family: 'Libre Baskerville', serif;
-
+    margin-left: 40px;
 }
 .container{
     display: grid;
@@ -77,13 +77,12 @@ header{
     grid-template-columns: 1fr;
     margin: 15px 100px;
     margin-top: 100px;
+    align: center;
 }
 .ultimas-noticias{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-
-
-    margin: 15px 75px
+    grid-template-columns: 2fr 1fr;
+    margin: 15px 75px;
 }
 
 
@@ -92,12 +91,32 @@ header{
     height: 1000px;
 }
 
+#noticia-piquena{
+    
+     float:right;
+     
 
+}
 #noticia-piquena div{
     border: 0.5px solid black;
-    height: 200px;
+    height: 130px;
+    background-color: white;
+    border-radius: 20px;
 }
-
+#noticia-piquena img{
+display: inline;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 5px;
+}
+#noticia-piquena img, a{
+    float: left
+}
+#noticia-piquena a{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: black;
+}
 ul {
     list-style-type: none;
     margin: 0;
