@@ -8,7 +8,8 @@
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48;
+  position: absolute;
 }
 
 img{
@@ -26,163 +27,181 @@ body{
     color: var(--cor-texto);
 
 }
-.jornalbr{
-    color: white;
-    text-align: right;
-    font-family: 'Libre Baskerville', serif;
-}
-h1{
-    color:azure;
-    text-align: right;
-    font-family: 'Libre Baskerville', serif;
-    margin-left: 40px;
-}
-input[type="checkbox"]{
-    display:none
-}
-nav{
-    background-color: rgb(122, 100, 248);
-    width: 300px;
-    height: 100%;
-}
-#menu-a > a{
-    display:block;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 65px;
-    justify-content: center;
-    align-items: center;
-    background-color: #024900;
-
-}
-.itens{
-    border: 1px solid black;
-   
-    
-
-}
-p{
-    font-size: 50pt;
-}
-header{
+header {
+    background-color: aquamarine;
+    box-shadow: 0px 3px 10px red;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
-    
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-#logo{
+div,section {
+    min-height: 120px;
+    border: 1px solid red;
+}
+
+#logo {
     display: flex;
     align-items: center;
+    width: 120px;
 }
-#logo > span{
-   
+
+#logo>span {
+
     width: 80px;
     color: white;
     text-align: right;
     font-family: 'Libre Baskerville', serif;
 }
 
-
-.noticias-principais{
-    border: 2px solid black;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 15px 100px;
-    margin-top: 100px;
-    align: center;
-}
-.ultimas-noticias{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 15px 75px;
+h1 {
+    color: rgb(217, 255, 0);
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 40px;
 }
 
-
-#noticia-grande{
-    border: 1px solid black;
-    height: 1000px;
+#topicos {
+    flex-grow: 1;
 }
 
-#noticia-piquena{
-    
-     float:right;
-     
-
+main {
+    display: flex;
 }
-#noticia-piquena div{
-    border: 0.5px solid black;
+
+#destaque {
+    flex-grow: 2;
+    height: 510px;
+}
+
+#ultimas {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+#ultimas>div {
     height: 130px;
-    background-color: white;
-    border-radius: 20px;
+    min-height: 130px;
+    background-color: rgb(255, 159, 159);
 }
-#noticia-piquena img{
-display: inline;
-margin-top: 10px;
-margin-left: 10px;
-border-radius: 5px;
+
+#ultimas >img {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
-#noticia-piquena > img > a{
+
+#ultimas>img>a {
     float: left
 }
-#noticia-piquena > a{
+
+#ultimas > a {
+    text-decoration: none;
     margin-top: 20px;
     margin-left: 5px;
     color: black;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
- 
-  .tópicos {
-  }
 
-  li, a {
-    text-decoration: none;
+#titulo-do-site {
+    flex-grow: 1;
+    height: 30px;
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+
+}
+
+#topicos {
+    display: flex;
+    align-items: center;
+
+}
+
+#topicos ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    color: rgb(255, 0, 0);
-  }
 
-  a:hover {
-    color: yellow;
-  }
+}
 
+.nav-topicos {
+    margin: 0 15px
+}
 
-/* Color Theme Swatches in Hex */
-.Terrosos--Verdes-claros-1-hex { color: #7E8A68; }
-.Terrosos--Verdes-claros-2-hex { color: #95A47B; }
-.Terrosos--Verdes-claros-3-hex { color: #A1B185; }
-.Terrosos--Verdes-claros-4-hex { color: #BDD09C; }
-.Terrosos--Verdes-claros-5-hex { color: #DBF0B4; }
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: green;
+    font-weight: 400;
+}
 
-/* Color Theme Swatches in RGBA */
-.Terrosos--Verdes-claros-1-rgba { color: rgba(126, 137, 103, 1); }
-.Terrosos--Verdes-claros-2-rgba { color: rgba(149, 163, 123, 1); }
-.Terrosos--Verdes-claros-3-rgba { color: rgba(161, 177, 133, 1); }
-.Terrosos--Verdes-claros-4-rgba { color: rgba(188, 207, 156, 1); }
-.Terrosos--Verdes-claros-5-rgba { color: rgba(219, 239, 179, 1); }
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    position: absolute;
+}
 
-/* Color Theme Swatches in HSLA */
-.Terrosos--Verdes-claros-1-hsla { color: hsla(0, 14, 47, 1); }
-.Terrosos--Verdes-claros-2-hsla { color: hsla(0, 18, 56, 1); }
-.Terrosos--Verdes-claros-3-hsla { color: hsla(0, 22, 60, 1); }
-.Terrosos--Verdes-claros-4-hsla { color: hsla(0, 35, 71, 1); }
-.Terrosos--Verdes-claros-5-hsla { color: hsla(0, 66, 82, 1); }
+.icon-menu {
+    display: none;
+}
 
-/*#F2F2F2
-#9CA68D
-#828C5D
-#B5BF69
-#555934
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .nav-principal {
+        padding: 15px 80px;
+    }
+
+    .nav-topicos {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .icon-menu button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .mobile-menu .nav-topicos {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .open {
+        display: block;
+    }
+
+    #topicos {
+        display: none;
+    }
+
+    #logo {
+        width: 100%;
+    }
+}

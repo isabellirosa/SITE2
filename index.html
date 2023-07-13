@@ -10,78 +10,70 @@
 <link rel="shortcut icon" type="image/jpg" href="imagens/brasil (1).png"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <body>
-<header>
-    <div class="container">
-        <div class="itens" id="logo">
-                    <span>JORNAL BR</span> 
-                    <img  height="65" src='imagens/brasil (1).png'/>
-                    <input type="checkbox" id="check">
-                    <label for="check">
-                        <i class="material-symbols-outlined">menu</i>
-                    </label>
-                    <nav>
-                        <ul id="menu-a">
-                            <li><a href="#home.html" class="tópicos">Home</a></li>
-                            <li><a href="#news" class="tópicos">News</a></li>
-                            <li><a href="#contact" class="tópicos">Contact</a></li>
-                            <li><a href="#about" class="tópicos">About</a></li>
-                          </ul>
-                    </nav>
+    <header>
+        <nav class="nav-principal">
+            <div id="logo">
+                <span>JORNAL BR</span>
+                <img height="65" src='imagens/brasil (1).png' />
+
+            </div>
+            <div id="topicos">
+                <ul id="menu-a">
+                    <li class="nav-topicos"><a href="#home.html" class="nav-link">Home</a></li>
+                    <li class="nav-topicos"><a href="#news" class="nav-link">News</a></li>
+                    <li class="nav-topicos"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-topicos"><a href="#about" class="nav-link">About</a></li>
+                </ul>
+            </div>
+            <div class="icon-menu">
+                <button onclick="menuShow()" class="material-symbols-outlined">menu</button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul id="menu-a">
+                <li class="nav-topicos"><a href="#home.html" class="nav-link">Home</a></li>
+                <li class="nav-topicos"><a href="#news" class="nav-link">News</a></li>
+                <li class="nav-topicos"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-topicos"><a href="#about" class="nav-link">About</a></li>
+            </ul>
         </div>
-        <div class="itens" id="titulo-principal">
-        
-            <ul>
-                <li><a href="#home.html" class="tópicos">Home</a></li>
-                <li><a href="#news" class="tópicos">News</a></li>
-                <li><a href="#contact" class="tópicos">Contact</a></li>
-                <li><a href="#about" class="tópicos">About</a></li>
-              </ul>
-        </div>
-    </div>
     </header>
-    
-   <main>
-    <section class="noticias-principais">
-        <div> <div class="itens" id="logo">
-            <h1>JORNAL <br> BR</h1> 
-            <img  height="100" src='imagens/brasil (1).png'/>
-            <h1> A página das melhoes notícias brasileiras</h1>
-</div>
-           </div>
-    </section>
 
+    <div id="titulo-do-site">
+        <h1>JORNAL <br> BR</h1>
+        <img height="100" src='imagens/brasil (1).png' />
+        <h1> A página das melhoes notícias brasileiras</h1>
+    </div>
 
-    <section class="ultimas-noticias">
-        <div id="noticia-grande">
-        </div>
-        <div id="noticia-piquena">
-            <div >
-               <img height="60" src="imagens/noticia1.jpg"> 
-               <a href="lula.html">Lula é preso no dia 25 de março porque sim</a>
-            
-            </div>
+    <main>
+
+        <section id="destaque">
+
+            destaques
+        </section>
+        <section id="ultimas">
             <div>
-
-
+                <img height="60" src="imagens/noticia1.jpg">
+                <a href="lula.html">Lula é preso no dia 25 de março porque sim</a>
             </div>
-            <div>
-
-
-            </div>
-            <div>
-
-
-            </div>
-            <div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-</main>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+            } else {
+                menuMobile.classList.add('open')
+            }
+        }
+    </script>
 </body>
+
 https://www.youtube.com/watch?v=Ex1AYcsuyUs
 https://codepen.io/theczardrive/pen/wvPxQPO?editors=1000
 https://codepen.io/Schepp/pen/WNbQByE?editors=1100

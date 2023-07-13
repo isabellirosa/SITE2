@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Layout Flex</title>
+    <style>
+        header {
+            background-color: aquamarine;
+            box-shadow: 0px 3px 10px red;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+
+        div,section {
+            min-height: 120px;
+            border: 1px solid red;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            width: 120px;
+        }
+
+        #logo>span {
+
+            width: 80px;
+            color: white;
+            text-align: right;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        h1 {
+            color: rgb(217, 255, 0);
+            text-align: right;
+            font-family: 'Libre Baskerville', serif;
+            margin-left: 40px;
+        }
+
+        #topicos {
+            flex-grow: 1;
+        }
+
+        main {
+            display: flex;
+        }
+
+        #destaque {
+            flex-grow: 2;
+            height: 510px;
+        }
+
+        #ultimas {
+            flex-grow: 1;
+            border-radius: 30px;
+        }
+
+        #ultimas>div {
+            height: 130px;
+            min-height: 130px;
+            background-color: rgb(255, 159, 159);
+        }
+
+        #ultimas >img {
+            display: inline;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        #ultimas>img>a {
+            float: left
+        }
+
+        #ultimas > a {
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 5px;
+            color: black;
+        }
+
+        #titulo-do-site {
+            flex-grow: 1;
+            height: 30px;
+            margin-top: 160px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .nav-principal {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 120px;
+
+        }
+
+        #topicos {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #topicos ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+        }
+
+        .nav-topicos {
+            margin: 0 15px
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 20px;
+            color: green;
+            font-weight: 400;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48;
+            position: absolute;
+        }
+
+        .icon-menu {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .nav-principal {
+                padding: 15px 80px;
+            }
+
+            .nav-topicos {
+                display: none;
+            }
+
+            .icon-menu {
+                display: block;
+            }
+
+            .icon-menu button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                margin-top: 40px;
+            }
+
+            .mobile-menu ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 16px;
+            }
+
+            .mobile-menu .nav-topicos {
+                display: block;
+                padding-top: 20px;
+            }
+
+            .open {
+                display: block;
+            }
+
+            #topicos {
+                display: none;
+            }
+
+            #logo {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-principal">
+            <div id="logo">
+                <span>JORNAL BR</span>
+                <img height="65" src='imagens/brasil (1).png' />
+
+            </div>
+            <div id="topicos">
+                <ul id="menu-a">
+                    <li class="nav-topicos"><a href="#home.html" class="nav-link">Home</a></li>
+                    <li class="nav-topicos"><a href="#news" class="nav-link">News</a></li>
+                    <li class="nav-topicos"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-topicos"><a href="#about" class="nav-link">About</a></li>
+                </ul>
+            </div>
+            <div class="icon-menu">
+                <button onclick="menuShow()" class="material-symbols-outlined">menu</button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul id="menu-a">
+                <li class="nav-topicos"><a href="#home.html" class="nav-link">Home</a></li>
+                <li class="nav-topicos"><a href="#news" class="nav-link">News</a></li>
+                <li class="nav-topicos"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-topicos"><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="titulo-do-site">
+        <h1>JORNAL <br> BR</h1>
+        <img height="100" src='imagens/brasil (1).png' />
+        <h1> A página das melhoes notícias brasileiras</h1>
+    </div>
+
+    <main>
+
+        <section id="destaque">
+
+            destaques
+        </section>
+        <section id="ultimas">
+            <div>
+                <img height="60" src="imagens/noticia1.jpg">
+                <a href="lula.html">Lula é preso no dia 25 de março porque sim</a>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+            } else {
+                menuMobile.classList.add('open')
+            }
+        }
+    </script>
+</body>
+
+</html>
