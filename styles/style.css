@@ -12,10 +12,6 @@
   position: absolute;
 }
 
-img{
-    text-align: right;
-    display: block;
-}
 :root{
     --cor-principal:#888C03; 
     --cor-texto: #000000;
@@ -37,7 +33,7 @@ header {
 }
 
 div,section {
-    min-height: 120px;
+    min-height: 80px;
     border: 1px solid red;
 }
 
@@ -45,6 +41,7 @@ div,section {
     display: flex;
     align-items: center;
     width: 120px;
+    height: 80px;
 }
 
 #logo>span {
@@ -64,6 +61,8 @@ h1 {
 
 #topicos {
     flex-grow: 1;
+    height: 80px;
+
 }
 
 main {
@@ -86,27 +85,26 @@ main {
     background-color: rgb(255, 159, 159);
 }
 
-#ultimas >img {
+#ultimas div >img {
     display: inline;
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 5px;
-}
-
-#ultimas>img>a {
     float: left
 }
 
-#ultimas > a {
+
+#ultimas div > a {
     text-decoration: none;
     margin-top: 20px;
     margin-left: 5px;
     color: black;
+    float: left
 }
 
 #titulo-do-site {
     flex-grow: 1;
-    height: 30px;
+    height: 130px;
     margin-top: 160px;
     display: flex;
     align-items: center;
@@ -116,7 +114,7 @@ main {
 .nav-principal {
     display: flex;
     justify-content: space-between;
-    padding: 20px 120px;
+    padding: 10px 70px;
 
 }
 
@@ -163,7 +161,7 @@ main {
 
 @media screen and (max-width: 1300px) {
     .nav-principal {
-        padding: 15px 80px;
+        padding: 10px 50px;
     }
 
     .nav-topicos {
