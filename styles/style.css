@@ -36,10 +36,7 @@ div,section {
 }
 
 #logo {
-    display: flex;
-    align-items: center;
-    width: 120px;
-    height: 80px;
+   display: none;
 }
 
 #logo>span {
@@ -163,7 +160,15 @@ main {
 #logo-central{
     display: none;
 }
-
+nav.ativo{
+    background-color: rgb(255, 255, 161);
+}
+#logo.ativo{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+}
 @media screen and (max-width: 1300px) {
     .nav-principal {
         padding: 0px 50px;
@@ -202,7 +207,7 @@ main {
 
 
     #menu-a{
-        width: 30vh;
+        width: 50vh;
         background-color: #ffffff;
         margin-top: 0;
         position: absolute;
@@ -223,5 +228,11 @@ main {
         display: flex;
         align-items: center;
         flex-grow: 1;
+    }
+    ul{
+        padding: 0;
+    }
+    #logo.ativo{
+        display: none;
     }
 }

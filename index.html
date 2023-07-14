@@ -77,6 +77,23 @@
             }
         }
     </script>
+    <script> 
+    const menu = document.querySelector('nav');
+
+        function activeScroll(){
+            menu.classList.toggle('ativo', scrollY > 0);
+        }
+        window.addEventListener('scroll', activeScroll)
+    </script>
+</body>
+<script> 
+    const menu2 = document.querySelector('#logo');
+
+        function activeScroll(){
+            menu2.classList.toggle('ativo', scrollY > 0);
+        }
+        window.addEventListener('scroll', activeScroll)
+    </script>
 </body>
 
 https://www.youtube.com/watch?v=Ex1AYcsuyUs
