@@ -25,13 +25,11 @@ body{
 }
 header {
     background-color: aquamarine;
-    box-shadow: 0px 3px 10px red;
-    position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
+    position: fixed;
 }
-
 div,section {
     min-height: 80px;
     border: 1px solid red;
@@ -105,16 +103,17 @@ main {
 #titulo-do-site {
     flex-grow: 1;
     height: 130px;
-    margin-top: 160px;
+    margin-top: 100px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
-
+    background-color: #8d8787;
 }
 
 .nav-principal {
     display: flex;
     justify-content: space-between;
-    padding: 10px 70px;
+    padding: 0px 70px;
 
 }
 
@@ -158,10 +157,16 @@ main {
 .mobile-menu {
     display: none;
 }
+#nova-logo{
+    display: none;
+}
+#logo-central{
+    display: none;
+}
 
 @media screen and (max-width: 1300px) {
     .nav-principal {
-        padding: 10px 50px;
+        padding: 0px 50px;
     }
 
     .nav-topicos {
@@ -176,7 +181,7 @@ main {
         background-color: transparent;
         border: none;
         cursor: pointer;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .mobile-menu ul {
@@ -195,11 +200,28 @@ main {
         display: block;
     }
 
-    #topicos {
-        display: none;
-    }
 
-    #logo {
-        width: 100%;
+    #menu-a{
+        width: 30vh;
+        background-color: #ffffff;
+        margin-top: 0;
+        position: absolute;
+    }
+    li:hover {
+        display: block;
+        background-color: blue;
+    
+    }
+    #logo{
+        display:none
+    }
+    #nova-logo{
+        display: flex;
+        align-items: center;
+    }
+    #logo-central{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
     }
 }
