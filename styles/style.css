@@ -13,7 +13,7 @@
 }
 
 :root{
-    --cor-principal:#888C03; 
+    --cor-principal:#ffffffd3; 
     --cor-texto: #000000;
     --fonte-titulo: 'Frank Ruhl Libre', serif;
 }
@@ -24,7 +24,7 @@ body{
 
 }
 header {
-    background-color: aquamarine;
+    background-color: rgb(187, 255, 78);
     top: 0px;
     left: 0px;
     right: 0px;
@@ -48,7 +48,7 @@ div,section {
 }
 
 h1 {
-    color: rgb(217, 255, 0);
+    color: rgb(147, 180, 252);
     text-align: right;
     font-family: 'Libre Baskerville', serif;
     margin-left: 40px;
@@ -99,12 +99,12 @@ main {
 
 #titulo-do-site {
     flex-grow: 1;
-    height: 130px;
+    height: 110px;
     margin-top: 100px;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
-    background-color: #8d8787;
+    justify-content: center;
+    background-color: #d0daac;
 }
 
 .nav-principal {
@@ -168,6 +168,27 @@ nav.ativo{
     align-items: center;
     width: 120px;
     height: 80px;
+}
+.melhoresnoticias h1{
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    margin-left: 380px;
+    background-color: #d0daac;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#titulo-do-site div{
+    margin-left: 380px;
+}
+.instagram{
+    display: inline-flex;
+    
+  
+}
+.titulo-site{
+    display: flex;
+    justify-content: center;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
