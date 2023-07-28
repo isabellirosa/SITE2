@@ -24,26 +24,29 @@ body{
 
 }
 header {
-    background-color: rgb(187, 255, 78);
+    background-color: rgb(255, 255, 255);
     top: 0px;
     left: 0px;
     right: 0px;
     position: fixed;
 }
-main div{
+main{
+    margin: 50px;
+}
+main section{
     background-color: blue;
     color: white;
     font-size: 50px;
     text-align: center;
     border: 1px solid gray;
-    min-width: 300px;
+    min-width: 500px;
     margin:10px;
     border-radius: 10px;
-    min-height: 200px;
+    min-height: 400px;
 }
 .div1{
     min-width: 700px;
-    min-height: 200px;
+    min-height: 400px;
 }
 div,section {
     min-height: 80px;
@@ -66,7 +69,7 @@ h1 {
     color: rgb(147, 180, 252);
     text-align: right;
     font-family: 'Libre Baskerville', serif;
-    margin-left: 40px;
+    
 }
 
 #topicos {
@@ -80,7 +83,6 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     border: 1px solid red;
-    height: 500px;
 }
 
 #titulo-do-site {
@@ -158,8 +160,7 @@ nav.ativo{
 .melhoresnoticias h1{
     font-size: 20px;
     display: block;
-    text-align: left;
-    margin-left: 380px;
+    text-align: center;
     background-color: #d0daac;
     margin-top: 0px;
     margin-bottom: 30px;
@@ -188,6 +189,7 @@ nav li a{
     border: 1px solid #000000;
     position: absolute;
     display: none;
+    box-shadow: 10px 5px 5px rgba(114, 114, 114, 0.767);
 }
 .menu-hover a{
     display: block;
@@ -199,6 +201,9 @@ nav li a{
 .nav-topicos:hover .menu-hover{
     display: block;
 
+}
+footer{
+    background-color: grey;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
