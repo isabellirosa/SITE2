@@ -30,6 +30,21 @@ header {
     right: 0px;
     position: fixed;
 }
+main div{
+    background-color: blue;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid gray;
+    min-width: 300px;
+    margin:10px;
+    border-radius: 10px;
+    min-height: 200px;
+}
+.div1{
+    min-width: 700px;
+    min-height: 200px;
+}
 div,section {
     min-height: 80px;
     border: 1px solid red;
@@ -62,39 +77,10 @@ h1 {
 
 main {
     display: flex;
-}
-
-#destaque {
-    flex-grow: 2;
-    height: 510px;
-}
-
-#ultimas {
-    flex-grow: 1;
-    border-radius: 30px;
-}
-
-#ultimas>div {
-    height: 130px;
-    min-height: 130px;
-    background-color: rgb(255, 159, 159);
-}
-
-#ultimas div >img {
-    display: inline;
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-    float: left
-}
-
-
-#ultimas div > a {
-    text-decoration: none;
-    margin-top: 20px;
-    margin-left: 5px;
-    color: black;
-    float: left
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    height: 500px;
 }
 
 #titulo-do-site {

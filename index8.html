@@ -5,8 +5,295 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JORNAL BR</title>
+    <style>
+        @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  position: absolute;
+}
+
+:root{
+    --cor-principal:#ffffffd3; 
+    --cor-texto: #000000;
+    --fonte-titulo: 'Frank Ruhl Libre', serif;
+}
+
+body{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+
+}
+header {
+    background-color: rgb(187, 255, 78);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+}
+div,section {
+    min-height: 80px;
+    border: 1px solid red;
+}
+
+#logo {
+   display: none;
+}
+
+#logo>span {
+
+    width: 80px;
+    color: white;
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    color: rgb(147, 180, 252);
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 40px;
+}
+
+#topicos {
+    flex-grow: 1;
+    height: 80px;
+
+}
+
+main {
+    display: flex;
+}
+
+#destaque {
+    flex-grow: 2;
+    height: 510px;
+}
+
+#ultimas {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+#ultimas>div {
+    height: 130px;
+    min-height: 130px;
+    background-color: rgb(255, 159, 159);
+}
+
+#ultimas div >img {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    float: left
+}
+
+
+#ultimas div > a {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: black;
+    float: left
+}
+
+#titulo-do-site {
+    flex-grow: 1;
+    height: 110px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0daac;
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+
+}
+
+#topicos {
+    display: flex;
+    align-items: center;
+
+}
+
+#topicos ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.nav-topicos {
+    height: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: green;
+    font-weight: 400;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    position: absolute;
+}
+
+.icon-menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+#nova-logo{
+    display: none;
+}
+#logo-central{
+    display: none;
+}
+nav.ativo{
+    background-color: rgb(255, 255, 161);
+}
+#logo.ativo{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+}
+.melhoresnoticias h1{
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    margin-left: 380px;
+    background-color: #d0daac;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#titulo-do-site div{
+    margin-left: 380px;
+}
+.instagram{
+    display: inline-flex;
+    
+  
+}
+.titulo-site{
+    display: flex;
+    justify-content: center;
+}
+.menu-a{
+    height: 100%;
+}
+nav li a{
+    display: inline-block;
+    padding: 30px;
+}
+.menu-hover{
+    background-color: antiquewhite;
+    border: 1px solid #000000;
+    position: absolute;
+    display: none;
+}
+.menu-hover a{
+    display: block;
+
+}
+.nav-link:hover{
+    background-color: red;
+}
+.nav-topicos:hover .menu-hover{
+    display: block;
+
+}
+@media screen and (max-width: 1300px) {
+    .nav-principal {
+        padding: 0px 50px;
+    }
+
+    .nav-topicos {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .icon-menu button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .mobile-menu .nav-topicos {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .open {
+        display: block;
+    }
+
+
+    #menu-a{
+        width: 50vh;
+        background-color: #ffffff;
+        margin-top: 0;
+        position: absolute;
+    }
+    li:hover {
+        display: block;
+        background-color: blue;
+    
+    }
+    #logo{
+        display:none
+    }
+    #nova-logo{
+        display: flex;
+        align-items: center;
+    }
+    #logo-central{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    ul{
+        padding: 0;
+    }
+    #logo.ativo{
+        display: none;
+    }
+    .nav-link:hover{
+        background-color: rgb(47, 0, 255);
+    }
+}
+    </style>
 </head>
-<link rel="stylesheet" href="styles/style.css">
 <link rel="shortcut icon" type="image/jpg" href="imagens/brasil (1).png"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <body>
@@ -106,13 +393,24 @@
         </div>
     <div class="melhoresnoticias">
         <h1> A página das melhoes notícias brasileiras</h1>
-    </div>
-       <main>
-        <div class="div1">1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div >5</div>        
+       </div>
+
+    <main>
+
+        <section id="destaque">
+
+            destaques
+        </section>
+        <section id="ultimas">
+            <div>
+                <img height="60" src="imagens/noticia1.jpg">
+                <a href="lula.html">lula e moço aaaaaa aaa aaaaaaaaa aaaaa</a>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
     </main>
     <script>
         function menuShow() {
