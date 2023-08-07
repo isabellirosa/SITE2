@@ -197,6 +197,7 @@ nav li a{
 }
 .nav-link:hover{
     background-color: red;
+    border-radius: 10%;
 }
 .nav-topicos:hover .menu-hover{
     display: block;
@@ -204,6 +205,19 @@ nav li a{
 }
 footer{
     background-color: grey;
+}
+
+#noticia1{
+    background-image: url("../imagens/iconbrasil.png");
+}
+.noticia1{
+    display: block;
+    margin-top: -4px;
+}
+#noticia2{
+    background-image: url("../imagens/noticia1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
@@ -228,7 +242,7 @@ footer{
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: Íconecenter;
         padding-bottom: 16px;
     }
 
