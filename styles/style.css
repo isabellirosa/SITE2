@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
