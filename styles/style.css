@@ -16,7 +16,9 @@ box-sizing: border-box;
   'opsz' 48;
   position: absolute;
 }
-
+#login{
+    color: #ffffff;
+}
 :root{
     --cor-principal:#ffffffd3; 
     --cor-texto: #000000;
@@ -50,8 +52,8 @@ main section{
     min-height: 400px;
 }
 .div1{
-    min-width: 700px;
-    min-height: 400px;
+    min-width: 600px;
+    min-height: 375px;
 }
 div,section {
     min-height: 80px;
@@ -71,7 +73,7 @@ div,section {
 }
 
 h1 {
-    color: rgb(147, 180, 252);
+    color: rgb(255, 255, 255);
     text-align: right;
     font-family: 'Libre Baskerville', serif;
     
@@ -97,7 +99,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d0daac;
+
+}
+#titulo-do-site, .melhoresnoticias>h1{
+    background-image: linear-gradient(to left, rgb(66, 66, 128),rgb(110, 219, 110));
 }
 
 .nav-principal {
@@ -131,15 +136,6 @@ main {
     font-weight: 400;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48;
-    position: absolute;
-}
-
 .icon-menu {
     display: none;
 }
@@ -163,20 +159,24 @@ nav.ativo{
     height: 80px;
 }
 .melhoresnoticias h1{
+    height: 40px;
     font-size: 20px;
     display: block;
     text-align: center;
-    background-color: #d0daac;
     margin-top: 0px;
     margin-bottom: 30px;
 }
-#titulo-do-site div{
-    margin-left: 380px;
+#titulo-do-site {
+    
+    
+    
 }
 .instagram{
-    display: inline-flex;
-    
-  
+    display: inline;
+    width: 30px;
+}
+.instagram span{
+    display: inline;
 }
 .titulo-site{
     display: flex;
@@ -213,7 +213,58 @@ footer{
 }
 
 #noticia1{
-    background-image: url("../imagens/iconbrasil.png");
+    outline: 3px solid black;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+}
+#noticia1 ul{
+    display:flex;
+    list-style: none;
+    width: 1800px;
+    height: auto;
+}
+
+#noticia1 li{
+    position: relative;
+    animation:slide 15s infinite ease-out;
+}
+#noticia1 li>a{
+    display:block;
+}
+@keyframes slide{
+    0%{left: 0px}
+    20%{left: 0px}
+    30%{left: -600px}
+    50%{left: -600px}
+    60%{left:-1200px}
+    80%{left: -1200px}
+    100%{left: 0px}
+
+}
+#img1{
+    background-image: url("../imagens/Javier-Milei.webp");
+    width: 600px;
+    height: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#img2{
+    background-image: url("../imagens/tagreuters.com2023binary_LYNXMPEJ5L0JK-FILEDIMAGE.webp");
+    width: 600px;
+    height: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#img3{
+    background-image: url("../imagens/tagreuters.com2023binary_LYNXMPEJ780PX-FILEDIMAGE.webp");
+    width: 600px;
+    height: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .noticia1{
     display: block;
