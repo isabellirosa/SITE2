@@ -7,7 +7,11 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-
+li>p{
+    position: absolute;
+    color:white ;
+    margin-top: -70px;
+}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -78,7 +82,9 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     
 }
-
+#titulo-do-site h1{
+    font-size:35px;
+}
 #topicos {
     flex-grow: 1;
     height: 80px;
@@ -93,10 +99,10 @@ main {
 }
 
 #titulo-do-site {
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 33fr 1fr 1fr;
     height: 110px;
     margin-top: 100px;
-    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -162,13 +168,15 @@ nav.ativo{
     height: 40px;
     font-size: 20px;
     display: block;
-    text-align: center;
     margin-top: 0px;
     margin-bottom: 30px;
+    text-align: start;
+    margin-left: 150px;
+
 }
 #titulo-do-site {
     
-    
+
     
 }
 .instagram{
@@ -180,7 +188,8 @@ nav.ativo{
 }
 .titulo-site{
     display: flex;
-    justify-content: center;
+    margin-left:300px;
+    align-items: center;
 }
 .menu-a{
     height: 100%;
@@ -190,19 +199,20 @@ nav li a{
     padding: 30px;
 }
 .menu-hover{
-    background-color: antiquewhite;
+    background-color: rgb(240, 238, 238);
     border: 1px solid #000000;
     position: absolute;
     display: none;
     box-shadow: 10px 5px 5px rgba(114, 114, 114, 0.767);
+    border-radius: 5%;
 }
 .menu-hover a{
     display: block;
 
 }
 .nav-link:hover{
-    background-color: red;
-    border-radius: 10%;
+    border-radius: 15%;
+    color: rgba(255, 252, 46, 0.966);
 }
 .nav-topicos:hover .menu-hover{
     display: block;
@@ -274,6 +284,9 @@ footer{
     background-image: url("../imagens/noticia1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+#topicos>ul{
+    margin-left:700px;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
