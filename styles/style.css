@@ -109,7 +109,7 @@ main {
 
 }
 #titulo-do-site, .melhoresnoticias{
-    background-image: linear-gradient(to left, rgb(66, 66, 128),rgb(110, 219, 110));
+    background-image: linear-gradient(to left, rgba(24, 24, 170, 0.822),rgba(19, 155, 19, 0.849));
 }
 
 .nav-principal {
@@ -221,7 +221,7 @@ nav li a{
 .nav-link:hover{
     border-radius: 15%;
     color: rgba(255, 252, 46, 0.966);
-    //*background-color: rgb(86, 104, 163);*//
+    /*background-color: rgb(86, 104, 163);*/
 }
 .nav-topicos:hover .menu-hover{
     display: block;
