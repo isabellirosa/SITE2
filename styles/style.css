@@ -7,11 +7,7 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-li>p{
-    position: relative;
-    color:white ;
-    margin-top: -70px;
-}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -97,7 +93,12 @@ main {
     flex-wrap: wrap;
     border: 1px solid red;
 }
-
+.home{
+    color:green
+}
+.home:hover{
+    color: rgba(255, 252, 46, 0.966);
+}
 #titulo-do-site {
     display: grid;
     grid-template-columns: 33fr 1fr 1fr;
@@ -220,7 +221,7 @@ nav li a{
 .nav-link:hover{
     border-radius: 15%;
     color: rgba(255, 252, 46, 0.966);
-    background-color: rgb(86, 104, 163);
+    //*background-color: rgb(86, 104, 163);*//
 }
 .nav-topicos:hover .menu-hover{
     display: block;
@@ -247,7 +248,7 @@ footer{
     position:relative;
     animation:slide 15s infinite ease-out;
 }
-#noticia1 li>a{
+#img1,#img2,#img3{
     display:block;
 }
 @keyframes slide{
@@ -261,7 +262,7 @@ footer{
 
 }
 #img1{
-    background-image: url("../imagens/Javier-Milei.webp");
+    background-image: url("../imagens/cultura3.webp");
     width: 600px;
     height: 375px;
     background-repeat: no-repeat;
@@ -295,6 +296,28 @@ footer{
 }
 #topicos>ul{
     margin-left:500px;
+}
+
+li>p{
+    font-size: 35px;
+    position: relative;
+    color:white ;
+    margin-top: -150px;
+  
+}
+.categoria{
+    display:inline-block;
+    position: absolute;
+    margin-top:-120px;
+    margin-left: -220px;
+    padding: 3px;
+    background-color: green;
+    background-size: 20%;
+    border-radius: 20%;
+    font-size: 13px;
+}
+#img1>a{
+    display: inline;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
