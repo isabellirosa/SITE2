@@ -107,7 +107,7 @@ main {
     justify-content: center;
 
 }
-#titulo-do-site, .melhoresnoticias>h1{
+#titulo-do-site, .melhoresnoticias{
     background-image: linear-gradient(to left, rgb(66, 66, 128),rgb(110, 219, 110));
 }
 
@@ -156,7 +156,7 @@ main {
     display: none;
 }
 nav.ativo{
-    background-color: rgb(255, 255, 161);
+    background-color: rgba(61, 137, 209, 0.863);
 }
 #logo.ativo{
     display: flex;
@@ -166,18 +166,22 @@ nav.ativo{
 }
 .melhoresnoticias h1{
     height: 40px;
-    font-size: 20px;
+    font-size: 15px;
     display: block;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-align: start;
-    margin-left: 150px;
+    margin-left: 250px;
 
 }
-#titulo-do-site {
-    
-
-    
+.melhoresnoticias{
+   min-height: 25px;
+}
+#titulo-do-site{
+    height:70px;
+} 
+#titulo-do-site>div {
+    min-height: 50px; 
 }
 .instagram{
     display: inline;
@@ -187,9 +191,10 @@ nav.ativo{
     display: inline;
 }
 .titulo-site{
+    min-height: 50px;
     display: flex;
     margin-left:300px;
-    align-items: center;
+    align-items:end;
 }
 .menu-a{
     height: 100%;
@@ -213,6 +218,7 @@ nav li a{
 .nav-link:hover{
     border-radius: 15%;
     color: rgba(255, 252, 46, 0.966);
+    background-color: rgb(86, 104, 163);
 }
 .nav-topicos:hover .menu-hover{
     display: block;
