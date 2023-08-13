@@ -8,7 +8,7 @@ margin: 0;
 box-sizing: border-box;
 }
 li>p{
-    position: absolute;
+    position: relative;
     color:white ;
     margin-top: -70px;
 }
@@ -204,6 +204,8 @@ nav li a{
     padding: 30px;
 }
 .menu-hover{
+    margin-left: -300px;
+    width: max-content;
     background-color: rgb(240, 238, 238);
     border: 1px solid #000000;
     position: absolute;
@@ -242,7 +244,7 @@ footer{
 }
 
 #noticia1 li{
-    position: relative;
+    position:relative;
     animation:slide 15s infinite ease-out;
 }
 #noticia1 li>a{
@@ -292,7 +294,7 @@ footer{
     background-size: cover;
 }
 #topicos>ul{
-    margin-left:700px;
+    margin-left:500px;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
@@ -317,7 +319,7 @@ footer{
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: Íconecenter;
+        text-align: center;
         padding-bottom: 16px;
     }
 
@@ -364,3 +366,5 @@ footer{
         background-color: rgb(47, 0, 255);
     }
 }
+
+
