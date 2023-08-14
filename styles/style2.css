@@ -47,7 +47,8 @@ main{
 }
 div,section {
     min-height: 80px;
-    border: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
 }
 #logo {
     display: none;
@@ -222,6 +223,21 @@ footer{
 #noticias-pequenas div{
     border: 0.5px solid black;
     height: 200px;
+}
+.principal h1{
+    color:black;
+    font-size: 40px;
+    text-align: start;
+}
+.principal p{
+    color:rgb(153, 139, 139);
+    font-size: 20px;
+    text-align: start;
+    display: inline;
+}
+.img-politica{
+    display: inline;
+    width: 300px;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
