@@ -236,8 +236,11 @@ footer{
     display: inline;
 }
 .img-politica{
-    display: inline;
-    width: 300px;
+    float: right;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 186px;
 }
 @media screen and (max-width: 1300px) {
     .nav-principal {
