@@ -2,314 +2,350 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
+
 *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
 body, nav{
-    margin-left: 100px;
-    margin-right: 100px;
+margin-left: 100px;
+margin-right: 100px;
 }
+
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
-  position: absolute;
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 48;
+position: absolute;
 }
 #login{
-    color: #ffffff;
+color: #ffffff;
 }
 :root{
-    --cor-principal:#ffffffd3; 
-    --cor-texto: #000000;
-    --fonte-titulo: 'Frank Ruhl Libre', serif;
+--cor-principal:#ffffffd3;
+--cor-texto: #000000;
+--fonte-titulo: 'Frank Ruhl Libre', serif;
 }
 
+
 body{
-    background-color: var(--cor-principal);
-    color: var(--cor-texto);
+background-color: var(--cor-principal);
+color: var(--cor-texto);
+
 
 }
 header {
-    background-color: rgb(255, 255, 255);
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    position:fixed;
-    z-index: 2;
+background-color: rgb(255, 255, 255);
+top: 0px;
+left: 0px;
+right: 0px;
+position:fixed;
+z-index: 2;
 }
 main{
-    min-width: 90%;
+max-width: 70%;
 }
 div,section {
-    min-height: 80px;
-    border-left: 1px solid red;
-    border-bottom: 1px solid red;
+min-height: 80px;
+border-left: 1px solid red;
+border-bottom: 1px solid red;
 }
 #logo {
-    display: none;
- }
- 
- #logo>span {
- 
-     width: 80px;
-     color: white;
-     text-align: right;
-     font-family: 'Libre Baskerville', serif;
- }
- 
- h1 {
-     color: rgb(255, 255, 255);
-     text-align: right;
-     font-family: 'Libre Baskerville', serif;
-     
- }
- #topicos {
-    flex-grow: 1;
-    height: 80px;
+display: none;
+}
+#logo>span {
+width: 80px;
+color: white;
+text-align: right;
+font-family: 'Libre Baskerville', serif;
+}
+h1 {
+color: rgb(255, 255, 255);
+text-align: right;
+font-family: 'Libre Baskerville', serif;
+}
+#topicos {
+flex-grow: 1;
+width: auto;
+padding-right: 300px;
+
 
 }
 aside{
-    display: block;
-    width: 20vh;
+    float:right;
+display: flex;
+flex-direction: column;
+width: 300px;
+padding-top: 30px;
+padding-right: 300px;
 }
 .main-aside{
-    display: flex;
-    flex-direction: row;
+display: flex;
+
 }
 aside>img{
-    margin-top: 400px;
+margin-top: 10px;
 }
 aside>p{
-    position: absolute;
-    padding: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: -250px;
-    margin-left: 230px;
-    background-color: rgb(0, 78, 10);
-    color: #ffffff;
+position: absolute;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+margin-top: 310px;
+margin-left: 230px;
+background-color: rgb(0, 78, 10);
+color: #ffffff;
 }
 .home{
-    color:green
+color:green
 }
 .home:hover{
-    color: rgba(255, 252, 46, 0.966);
+color: rgba(255, 252, 46, 0.966);
 }
 .nav-principal {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 70px;
+display: flex;
+justify-content: space-between;
+padding: 0px 70px;
+
 
 }
+
 
 #topicos {
-    
-    align-items: center;
+align-items: center;
+
 
 }
+
 
 #topicos ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
+display: flex;
+justify-content: flex-end;
+list-style: none;
+
 
 }
+
 
 .nav-topicos {
-    height: 100%;
+height: 100%;
 }
+
 
 .nav-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: green;
-    font-weight: 400;
+text-decoration: none;
+font-size: 20px;
+color: green;
+font-weight: 400;
 }
+
 
 .icon-menu {
-    display: none;
+display: none;
 }
+
 
 .mobile-menu {
-    display: none;
+display: none;
 }
 #nova-logo{
-    display: none;
+display: none;
 }
 #logo-central{
-    display: none;
+display: none;
 }
 nav.ativo{
-    background-color: rgba(61, 137, 209, 0.863);
+background-color: rgba(61, 137, 209, 0.863);
 }
 #logo.ativo{
-    display: flex;
-    align-items: center;
-    width: 120px;
-    height: 80px;
+display: flex;
+align-items: center;
+width: 120px;
+height: 80px;
 }
 .melhoresnoticias h1{
-    height: 40px;
-    font-size: 15px;
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: start;
-    margin-left: 250px;
+height: 40px;
+font-size: 15px;
+display: block;
+margin-top: 0px;
+margin-bottom: 0px;
+text-align: start;
+margin-left: 250px;
 
-    
+
 }
 .melhoresnoticias{
-    min-height: 25px;
- }
- .menu-a{
-    height: 100%;
+min-height: 25px;
+}
+.menu-a{
+height: 100%;
 }
 nav li a{
-    display: inline-block;
-    padding: 30px;
+display: inline-block;
+padding: 30px;
 }
 .menu-hover{
-    margin-left: -300px;
-    width: max-content;
-    background-color: rgb(240, 238, 238);
-    border: 1px solid #000000;
-    position: absolute;
-    display: none;
-    box-shadow: 10px 5px 5px rgba(114, 114, 114, 0.767);
-    border-radius: 5%;
+margin-left: -300px;
+width: max-content;
+background-color: rgb(240, 238, 238);
+border: 1px solid #000000;
+position: absolute;
+display: none;
+box-shadow: 10px 5px 5px rgba(114, 114, 114, 0.767);
+border-radius: 5%;
 }
 .menu-hover a{
-    display: block;
+display: block;
+
 
 }
 .nav-link:hover{
-    border-radius: 15%;
-    color: rgba(255, 252, 46, 0.966);
-    /*background-color: rgb(86, 104, 163);*/
+border-radius: 15%;
+color: rgba(255, 252, 46, 0.966);
+/*background-color: rgb(86, 104, 163);*/
 }
 .nav-topicos:hover .menu-hover{
-    display: block;
+display: block;
+
 
 }
 footer{
-    background-color: grey;
+background-color: grey;
 }
 .categorias{
-    margin-top: 100px;
-    border: 2px solid black;
-    display: grid;
-    grid-template-columns: 1fr;
-    
+margin-top: 100px;
+border: 2px solid black;
+display: grid;
+grid-template-columns: 1fr;
 }
 .principal{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin: 15px 75px
+display: grid;
+grid-template-columns: 1fr;
+padding: 15px 100px;
+padding-left: 150px;
 }
+
+
 
 
 #noticia-principal{
-    border: 1px solid black;
-    height: 1000px;
+border: 1px solid black;
+height: 1000px;
 }
 
 
-#noticias-pequenas div{
-    border: 0.5px solid black;
-    height: 200px;
-}
 .principal h1{
-    color:black;
-    font-size: 40px;
-    text-align: start;
+color:black;
+font-size: 40px;
+text-align: start;
 }
 .principal p{
-    color:rgb(153, 139, 139);
-    font-size: 20px;
-    text-align: start;
-    display: inline;
+color:rgb(153, 139, 139);
+font-size: 20px;
+text-align: start;
+display: inline;
 }
 .img-politica{
-    float: right;
-    border: transparent thin solid;
-    padding: 5px;
-    margin: 0px 10px 10px 0;
-    max-width: 186px;
+float: right;
+border: transparent thin solid;
+padding: 5px;
+margin: 0px 10px 10px 0;
+max-width: 186px;
+}
+.noticias-pequenas{
+    background-color: aquamarine;
+display: grid;
+grid-template-columns: 2fr 4fr;
+min-width: 300px;
+min-height: 100px;
+border-radius: 4%;
+overflow: hidden;
+margin-top: 10px;
+}
+
+.noticias-pequenas>div>img{ 
+    width: 100%;
+    height:100%;
 }
 @media screen and (max-width: 1300px) {
-    .nav-principal {
-        padding: 0px 50px;
-    }
-
-    .nav-topicos {
-        display: none;
-    }
-
-    .icon-menu {
-        display: block;
-    }
-
-    .icon-menu button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        margin-top: 30px;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 16px;
-    }
-
-    .mobile-menu .nav-topicos {
-        display: block;
-        padding-top: 20px;
-    }
-
-    .open {
-        display: block;
-    }
+.nav-principal {
+padding: 0px 50px;
+}
 
 
-    #menu-a{
-        width: 50vh;
-        background-color: #ffffff;
-        margin-top: 0;
-        position: absolute;
-        justify-content: flex-end;
-    }
-    li:hover {
-        display: block;
-        background-color: blue;
-    
-    }
-    #logo{
-        display:none
-    }
-    #nova-logo{
-        display: flex;
-        align-items: center;
-    }
-    #logo-central{
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-    }
-    ul{
-        padding: 0;
-    }
-    #logo.ativo{
-        display: none;
-    }
-    .nav-link:hover{
-        background-color: rgb(47, 0, 255);
-    }
+.nav-topicos {
+display: none;
+}
+
+
+.icon-menu {
+display: block;
+}
+
+
+.icon-menu button {
+background-color: transparent;
+border: none;
+cursor: pointer;
+margin-top: 30px;
+}
+
+
+.mobile-menu ul {
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 16px;
+}
+
+
+.mobile-menu .nav-topicos {
+display: block;
+padding-top: 20px;
+}
+
+
+.open {
+display: block;
+}
+
+
+
+
+#menu-a{
+width: 50vh;
+background-color: #ffffff;
+margin-top: 0;
+position: absolute;
+justify-content: flex-end;
+}
+li:hover {
+display: block;
+background-color: blue;
+}
+#logo{
+display:none
+}
+#nova-logo{
+display: flex;
+align-items: center;
+}
+#logo-central{
+display: flex;
+align-items: center;
+flex-grow: 1;
+}
+ul{
+padding: 0;
+}
+#logo.ativo{
+display: none;
+}
+.nav-link:hover{
+background-color: rgb(47, 0, 255);
+}
 }
