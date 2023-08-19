@@ -39,12 +39,13 @@ color: var(--cor-texto);
 
 }
 header {
-background-color: rgb(255, 255, 255);
 top: 0px;
 left: 0px;
 right: 0px;
 position:fixed;
 z-index: 2;
+margin-left: -100px;
+margin-right: -100px
 }
 main{
 max-width: 70%;
@@ -71,15 +72,12 @@ font-family: 'Libre Baskerville', serif;
 #topicos {
 flex-grow: 1;
 width: auto;
-padding-right: 300px;
-
-
 }
 aside{
     float:right;
 display: flex;
 flex-direction: column;
-width: 300px;
+width: 400px;
 padding-top: 30px;
 padding-right: 300px;
 }
@@ -214,7 +212,51 @@ display: block;
 
 }
 footer{
-background-color: grey;
+    background-color: rgb(38, 76, 148);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -100px;
+    margin-right: -100px;
+    height:250px
+}
+.contato{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.contato>div{
+    align-items: center;
+}
+.contato img{
+    display: inline;
+    margin-top: 17px;
+}
+strong{
+    color: #262629;
+}
+.about{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.apps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.alinhamento{
+    margin-top: 20px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.titulo-about{
+    font-size: 15px;
+    color:#000000;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+    
 }
 .categorias{
 margin-top: 100px;
@@ -225,8 +267,7 @@ grid-template-columns: 1fr;
 .principal{
 display: grid;
 grid-template-columns: 1fr;
-padding: 15px 100px;
-padding-left: 150px;
+padding-right: 30px;
 }
 
 
@@ -257,19 +298,33 @@ margin: 0px 10px 10px 0;
 max-width: 186px;
 }
 .noticias-pequenas{
-    background-color: aquamarine;
+    background-color: rgba(216, 216, 216, 0.76);
 display: grid;
 grid-template-columns: 2fr 4fr;
-min-width: 300px;
+min-width: 400px;
 min-height: 100px;
 border-radius: 4%;
 overflow: hidden;
 margin-top: 10px;
+border: solid 1px rgb(117, 117, 117);
 }
 
 .noticias-pequenas>div>img{ 
     width: 100%;
     height:100%;
+}
+.noticias-pequenas>div>a{ 
+    text-decoration: none;
+    color: green;
+
+}
+.noticias-pequenas>div>a:hover{ 
+    text-decoration: none;
+    color: yellow;
+
+}
+.nome-noticia{
+    padding: 13px;
 }
 @media screen and (max-width: 1300px) {
 .nav-principal {

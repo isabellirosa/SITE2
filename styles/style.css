@@ -35,12 +35,13 @@ body{
 
 }
 header {
-    background-color: rgb(255, 255, 255);
     top: 0px;
     left: 0px;
     right: 0px;
     position:fixed;
     z-index: 2;
+    margin-left: -100px;
+    margin-right: -100px
 }
 main{
     margin: 50px;
@@ -51,10 +52,9 @@ main section{
     font-size: 50px;
     text-align: center;
     border: 1px solid gray;
-    min-width: 500px;
     margin:10px;
     border-radius: 10px;
-    min-height: 400px;
+    
 }
 .div1{
     min-width: 600px;
@@ -101,25 +101,29 @@ main {
 
 }
 aside{
-    display: block;
-    width: 20vw;
+    float:right;
+display: flex;
+flex-direction: column;
+width: 300px;
+padding-top: 30px;
+padding-right: 300px;
 }
 .main-aside{
-    display: flex;
-    flex-direction: row;
+display: flex;
+
 }
 aside>img{
-    margin-top: 400px;
+margin-top: 10px;
 }
-.x{
-    position: absolute;
-    padding: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: -250px;
-    margin-left: 230px;
-    background-color: rgb(0, 78, 10);
-    color: #ffffff;
+aside>p{
+position: absolute;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+margin-top: 310px;
+margin-left: 230px;
+background-color: rgb(0, 78, 10);
+color: #ffffff;
 }
 .home{
     color:green
@@ -180,6 +184,7 @@ aside>img{
 }
 #nova-logo{
     display: none;
+    width: 100px;
 }
 #logo-central{
     display: none;
@@ -256,9 +261,52 @@ nav li a{
 
 }
 footer{
-    background-color: grey;
+    background-color: rgb(38, 76, 148);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -100px;
+    margin-right: -100px;
+    height:250px
 }
-
+.contato{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.contato>div{
+    align-items: center;
+}
+.contato img{
+    display: inline;
+    margin-top: 17px;
+}
+strong{
+    color: #262629;
+}
+.about{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.apps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.alinhamento{
+    margin-top: 20px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.titulo-about{
+    font-size: 15px;
+    color:#000000;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+    
+}
 #noticia1{
     outline: 3px solid black;
     width: 400px;
@@ -315,12 +363,16 @@ footer{
 }
 #img4{
     background-image: url("../imagens/esporte1.webp");
-    width: 600px;
-    height: 375px;
+    width: 300px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5%;
 
+}
+#noticia2{
+    display:inline-block;
+    height: 200px;
 }
 #noticia2>a{
     display:block;
@@ -346,7 +398,7 @@ li>p{
 }
 .c4{
     display:block;
-    font-size: 35px;
+    font-size: 15px;
     position: relative;
     color:white ;
     background-color: #acacac81;
@@ -356,7 +408,7 @@ li>p{
     display:inline-block;
     position: absolute;
     margin-top:-120px;
-    margin-left: -220px;
+    margin-left: -100px;
     padding: 3px;
     background-color: green;
     background-size: 20%;
@@ -377,8 +429,10 @@ li>p{
 #img1>a{
     display: inline;
 }
-
 @media screen and (max-width: 1300px) {
+    #topicos{
+        display: none;
+    }
     .nav-principal {
         padding: 0px 50px;
     }
@@ -409,9 +463,10 @@ li>p{
         display: block;
         padding-top: 20px;
     }
-
     .open {
-        display: block;
+        display: block; 
+        height: 0px;
+       
     }
 
 
@@ -439,6 +494,11 @@ li>p{
         align-items: center;
         flex-grow: 1;
     }
+    #logo-central>div{
+        display: inline-block;
+        margin-left: 20px;
+        float: right;
+    }
     ul{
         padding: 0;
     }
@@ -447,6 +507,10 @@ li>p{
     }
     .nav-link:hover{
         background-color: rgb(47, 0, 255);
+    }
+    .mobile-menu.open{
+        background-color: rgba(255, 255, 255, 0);
+        
     }
 }
 .categorias{
@@ -468,8 +532,33 @@ li>p{
 }
 
 
-#noticias-pequenas div{
-    border: 0.5px solid black;
-    height: 200px;
+.noticias-pequenas{
+    background-color: rgba(212, 209, 209, 0.76);
+display: grid;
+grid-template-columns: 1fr;
+min-width: 300px;
+min-height: 100px;
+border-radius: 4%;
+overflow: hidden;
+margin-top: 10px;
 }
 
+.noticias-pequenas>div>img{ 
+    width: 100%;
+    height:100%;
+}
+.noticias-pequenas>p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.noticias-pequenas>a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:green;
+}
+.noticias-pequenas>a:hover{
+    color:rgb(251, 255, 0);
+}
