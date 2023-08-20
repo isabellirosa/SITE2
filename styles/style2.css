@@ -60,7 +60,7 @@ display: none;
 }
 #logo>span {
 width: 80px;
-color: white;
+color: rgb(63, 63, 63);
 text-align: right;
 font-family: 'Libre Baskerville', serif;
 }
@@ -156,7 +156,10 @@ display: none;
 display: none;
 }
 nav.ativo{
-background-color: rgba(61, 138, 209, 0.788);
+    background-color: rgb(235, 235, 235);
+}
+.nav-link.ativo{
+    color: rgba(255, 255, 255, 0.863);
 }
 #logo.ativo{
 display: flex;
@@ -402,7 +405,7 @@ display:none
 display: flex;
 align-items: center;
 }
-#logo-central{
+#logo-central.ativo{
 display: flex;
 align-items: center;
 flex-grow: 1;

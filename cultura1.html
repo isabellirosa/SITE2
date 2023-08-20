@@ -158,30 +158,36 @@ expand_more</span></a>
 <p>x</p></aside>
 </section>
 <script>
-function menuShow() {
-let menuMobile = document.querySelector('.mobile-menu');
-if (menuMobile.classList.contains('open')) {
-menuMobile.classList.remove('open');
-} else {
-menuMobile.classList.add('open')
-}
-}
+    function menuShow() {
+        let menuMobile = document.querySelector('.mobile-menu');
+        if (menuMobile.classList.contains('open')) {
+            menuMobile.classList.remove('open');
+        } else {
+            menuMobile.classList.add('open')
+        }
+    }
 </script>
-<script>
-const menu = document.querySelector('nav');
+    <script>
+    const menu = document.querySelector('nav');
 
+    function activeScroll() {
+        menu.classList.toggle('ativo', scrollY > 0);
+    }
+    window.addEventListener('scroll', activeScroll)
+</script>
+    <script>
+const menu2 = document.querySelector('#logo');
 
 function activeScroll() {
-menu.classList.toggle('ativo', scrollY > 0);
+    menu2.classList.toggle('ativo', scrollY > 0);
 }
 window.addEventListener('scroll', activeScroll)
 </script>
-<script>
-const menu2 = document.querySelector('#logo');
-
+    <script>
+const menu3 = document.querySelector('#logo-central');
 
 function activeScroll() {
-menu2.classList.toggle('ativo', scrollY > 0);
+    menu3.classList.toggle('ativo', scrollY > 0);
 }
 window.addEventListener('scroll', activeScroll)
 </script>

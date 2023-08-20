@@ -530,7 +530,7 @@ li>p{
         display: flex;
         align-items: center;
     }
-    #logo-central{
+    #logo-central.ativo{
         display: flex;
         align-items: center;
         flex-grow: 1;
