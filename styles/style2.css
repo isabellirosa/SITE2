@@ -66,7 +66,6 @@ font-family: 'Libre Baskerville', serif;
 }
 h1 {
 color: rgb(255, 255, 255);
-text-align: right;
 font-family: 'Libre Baskerville', serif;
 }
 #topicos {
@@ -93,7 +92,7 @@ position: absolute;
 padding: 3px;
 padding-left: 5px;
 padding-right: 5px;
-margin-top: 310px;
+margin-top: 450px;
 margin-left: 230px;
 background-color: rgb(0, 78, 10);
 color: #ffffff;
@@ -157,7 +156,7 @@ display: none;
 display: none;
 }
 nav.ativo{
-background-color: rgba(61, 137, 209, 0.863);
+background-color: rgba(61, 138, 209, 0.788);
 }
 #logo.ativo{
 display: flex;
@@ -260,9 +259,12 @@ strong{
 }
 .categorias{
 margin-top: 100px;
+margin-bottom: 20px;
 border: 2px solid black;
 display: grid;
 grid-template-columns: 1fr;
+background-image: linear-gradient(to left, rgba(24, 24, 170, 0.822),rgba(19, 155, 19, 0.849));
+align-items: center;
 }
 .principal{
 display: grid;
@@ -284,8 +286,8 @@ color:black;
 font-size: 40px;
 text-align: start;
 }
-.principal p{
-color:rgb(153, 139, 139);
+article{
+color:rgb(82, 82, 82);
 font-size: 20px;
 text-align: start;
 display: inline;
@@ -295,15 +297,15 @@ float: right;
 border: transparent thin solid;
 padding: 5px;
 margin: 0px 10px 10px 0;
-max-width: 186px;
+width: 350px;
 }
 .noticias-pequenas{
-    background-color: rgba(216, 216, 216, 0.76);
+    background-color: rgb(255, 255, 255);
 display: grid;
 grid-template-columns: 2fr 4fr;
 min-width: 400px;
 min-height: 100px;
-border-radius: 4%;
+border-radius: 2%;
 overflow: hidden;
 margin-top: 10px;
 border: solid 1px rgb(117, 117, 117);
@@ -325,6 +327,17 @@ border: solid 1px rgb(117, 117, 117);
 }
 .nome-noticia{
     padding: 13px;
+}
+
+.nome-categoria{
+    display: block;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 15%;
+}
+.subtitulo{
+    color:#2b2a2a;
+    font-size: 20px;
 }
 @media screen and (max-width: 1300px) {
 .nav-principal {

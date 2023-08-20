@@ -24,7 +24,7 @@ body, nav{
     color: #ffffff;
 }
 :root{
-    --cor-principal:#ffffffd3; 
+    --cor-principal:#f3f2f2d3; 
     --cor-texto: #000000;
     --fonte-titulo: 'Frank Ruhl Libre', serif;
 }
@@ -44,7 +44,8 @@ header {
     margin-right: -100px
 }
 main{
-    margin: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 main section{
     background-color: blue;
@@ -62,7 +63,7 @@ main section{
 }
 div,section {
     min-height: 80px;
-    border: 1px solid red;
+    borer: 1px solid red;
 }
 
 #logo {
@@ -72,7 +73,7 @@ div,section {
 #logo>span {
 
     width: 80px;
-    color: white;
+    color: rgb(61, 61, 61);
     text-align: right;
     font-family: 'Libre Baskerville', serif;
 }
@@ -190,7 +191,10 @@ color: #ffffff;
     display: none;
 }
 nav.ativo{
-    background-color: rgba(61, 137, 209, 0.863);
+    background-color: rgb(235, 235, 235);
+}
+.nav-link.ativo{
+    color: rgba(255, 255, 255, 0.863);
 }
 #logo.ativo{
     display: flex;
@@ -240,7 +244,7 @@ nav li a{
 .menu-hover{
     margin-left: -300px;
     width: max-content;
-    background-color: rgb(240, 238, 238);
+    background-color: rgb(235, 235, 235);
     border: 1px solid #000000;
     position: absolute;
     display: none;
@@ -361,15 +365,41 @@ strong{
     background-size: cover;
 
 }
-#img4{
+#img5{
     background-image: url("../imagens/esporte1.webp");
     width: 300px;
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5%;
-
 }
+#img6{
+    background-image: url("../imagens/politica2.webp");
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+    #img7{
+        background-image: url("../imagens/esporte2.webp");
+        width: 300px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5%;
+    
+    }
+    #img8{
+        background-image: url("../imagens/famosos2.webp");
+        width: 300px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5%;
+    
+    }
+
 #noticia2{
     display:inline-block;
     height: 200px;
@@ -402,13 +432,13 @@ li>p{
     position: relative;
     color:white ;
     background-color: #acacac81;
-    margin-top: -90px;
+    margin-top: -45px;
 }
 .categoria{
     display:inline-block;
     position: absolute;
-    margin-top:-120px;
-    margin-left: -100px;
+    margin-top:-75px;
+    margin-left: -130px;
     padding: 3px;
     background-color: green;
     background-size: 20%;
@@ -419,6 +449,17 @@ li>p{
     display:inline-block;
     position: absolute;
     margin-top:-160px;
+    margin-left: -220px;
+    padding: 3px;
+    background-color: green;
+    background-size: 20%;
+    border-radius: 20%;
+    font-size: 13px;
+}
+.categoria3{
+    display:inline-block;
+    position: absolute;
+    margin-top:-120px;
     margin-left: -220px;
     padding: 3px;
     background-color: green;
@@ -533,7 +574,7 @@ li>p{
 
 
 .noticias-pequenas{
-    background-color: rgba(212, 209, 209, 0.76);
+    background-color: rgb(233, 232, 232);
 display: grid;
 grid-template-columns: 1fr;
 min-width: 300px;
