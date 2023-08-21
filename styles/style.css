@@ -513,11 +513,19 @@ margin-top: 10px;
         margin-left: 100px;
         margin-right: 100px;
     }
+    footer{
+        margin-left: -100px;
+        margin-right: -100px;
+    }
 }
 @media screen and (max-width: 1205px) {
     body, nav{
         margin-left: 0px;
         margin-right: 10px;
+    }
+    footer{
+        margin-left: 0px;
+        margin-right: -10px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -577,6 +585,10 @@ margin-top: 10px;
     body, nav{
         margin-left: 100px;
         margin-right: 100px;
+    }
+    footer{
+        margin-left: -100px;
+        margin-right: -100px;
     }
 }
 @media screen and (max-width: 1300px) {
@@ -665,6 +677,10 @@ margin-top: 10px;
 }
 @media screen and (max-width: 900px) {
     body, nav{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    footer{
         margin-left: 0px;
         margin-right: 0px;
     }
