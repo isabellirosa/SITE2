@@ -7,6 +7,46 @@
 
 
    <style>
+
+.carregamento{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    animation: carregamento 1.5s 1.5s;
+    animation-delay: 1.5s;
+}
+div.loading{
+    width: 100px;
+    height: 100px;
+    border: 10px solid;
+    border-color: rgb(255, 238, 0) white white;
+    border-radius: 100%;
+    animation: loading 1.5s 1.5s;
+}
+
+@keyframes loading{
+    0%{
+        transform:rotate(0deg);
+    }
+    99%{
+        transform:rotate(360deg);
+    }
+    100%{ display: none;
+    }
+}
+@keyframes carregamento{
+   
+    0%{ width:0%;
+    }
+    1%{ width:80%;
+    }
+    100%{ width:80%;
+    }
+}
        *{
            margin: 0;
            padding: 0;
@@ -54,6 +94,9 @@
 
 </head>
 <body>
+    <div class="carregamento">
+        <div class="loading"></div>
+    </div>
    <header>
        <div></div>
        <div id="titulo">
