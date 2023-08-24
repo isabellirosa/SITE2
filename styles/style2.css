@@ -342,6 +342,16 @@ border: solid 1px rgb(117, 117, 117);
     color:#2b2a2a;
     font-size: 20px;
 }
+@media screen and (max-width: 1400px) {
+    body, nav{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    footer{
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+}
 @media screen and (max-width: 1300px) {
 .nav-principal {
 padding: 0px 50px;
@@ -495,16 +505,50 @@ background-color: rgb(47, 0, 255);
     .noticias-pequenas{
     min-width: 400px;
     }
-    
+    body, nav{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    footer{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 @media screen and (max-width: 700px) {
+    footer {
+        background-color: rgb(38, 76, 148);
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+         margin-left: 0px; 
+        margin-right: 0px; 
+        height: 250px;
+    }
     .aside-main{
     margin-right: 140px;
     }
     .noticias-pequenas{
     min-width: 400px;
     }
-    
+    .contato {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-right: 10px;
+        margin-left: 10px;
+        width:40px
+    }
+    .about {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 40px;
+    }
+    strong{
+        font-size: 12px;
+    }
+    .titulo-about{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 640px) {
     .aside-main{
