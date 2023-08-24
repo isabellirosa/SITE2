@@ -26,7 +26,7 @@ position: absolute;
 color: #ffffff;
 }
 :root{
---cor-principal:#ffffffd3;
+--cor-principal:#f1f1f1d3;
 --cor-texto: #000000;
 --fonte-titulo: 'Frank Ruhl Libre', serif;
 }
@@ -52,8 +52,6 @@ max-width: 70%;
 }
 div,section {
 min-height: 80px;
-border-left: 1px solid red;
-border-bottom: 1px solid red;
 }
 #logo {
 display: none;
@@ -181,8 +179,8 @@ margin-left: 250px;
 .melhoresnoticias{
 min-height: 25px;
 }
-.menu-a{
-height: 100%;
+#menu-a{
+margin-left:100px;
 }
 nav li a{
 display: inline-block;
@@ -196,7 +194,7 @@ border: 1px solid #000000;
 position: absolute;
 display: none;
 box-shadow: 10px 5px 5px rgba(114, 114, 114, 0.767);
-border-radius: 5%;
+margin-top: -3px;
 }
 .menu-hover a{
 display: block;
@@ -217,6 +215,7 @@ footer{
     background-color: rgb(38, 76, 148);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
     margin-left: -100px;
     margin-right: -100px;
     height:250px
@@ -263,7 +262,7 @@ strong{
 .categorias{
 margin-top: 100px;
 margin-bottom: 20px;
-border: 2px solid black;
+border: 1px solid #1a1a1a;
 display: grid;
 grid-template-columns: 1fr;
 background-image: linear-gradient(to left, rgba(24, 24, 170, 0.822),rgba(19, 155, 19, 0.849));
@@ -342,6 +341,9 @@ border: solid 1px rgb(117, 117, 117);
     color:#2b2a2a;
     font-size: 20px;
 }
+.aside-main{
+    display: none;
+}
 @media screen and (max-width: 1400px) {
     body, nav{
         margin-left: 100px;
@@ -399,15 +401,12 @@ display: block;
 
 #menu-a{
 width: 50vh;
-background-color: #ffffff;
+background-color: #ebebeb;
 margin-top: 0;
 position: absolute;
 justify-content: flex-end;
 }
-li:hover {
-display: block;
-background-color: blue;
-}
+
 #logo{
 display:none
 }
@@ -426,9 +425,13 @@ padding: 0;
 #logo.ativo{
 display: none;
 }
-.nav-link:hover{
-background-color: rgb(47, 0, 255);
+li:hover{
+    background-color: #9c9c9c;
 }
+.nav-link:hover{
+color: yellow;
+}
+
 }
 @media screen and (max-width: 1200px) {
     aside{
@@ -450,13 +453,13 @@ background-color: rgb(47, 0, 255);
     padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 505px;
+    margin-top: 1285px;
     margin-left: 230px;
     background-color: rgb(0, 78, 10);
     color: #ffffff;
     }
     .noticias-pequenas{
-        background-color: rgb(233, 232, 232);
+        background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr;
     min-width: 400px;
@@ -499,12 +502,7 @@ background-color: rgb(47, 0, 255);
 
 }
 @media screen and (max-width: 900px) {
-    .aside-main{
-    margin-right: 200px;
-    }
-    .noticias-pequenas{
-    min-width: 400px;
-    }
+
     body, nav{
         margin-left: 0px;
         margin-right: 0px;
@@ -513,6 +511,13 @@ background-color: rgb(47, 0, 255);
         margin-left: 0px;
         margin-right: 0px;
     }
+    header{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #menu-a{
+        margin-left:0px;
+        }
 }
 @media screen and (max-width: 700px) {
     footer {
@@ -524,7 +529,7 @@ background-color: rgb(47, 0, 255);
         height: 250px;
     }
     .aside-main{
-    margin-right: 140px;
+    margin-right: 190px;
     }
     .noticias-pequenas{
     min-width: 400px;
@@ -552,7 +557,7 @@ background-color: rgb(47, 0, 255);
 }
 @media screen and (max-width: 640px) {
     .aside-main{
-    margin-right: 100px;
+    margin-right: 140px;
     }
     .noticias-pequenas{
     min-width: 400px;
@@ -560,8 +565,13 @@ background-color: rgb(47, 0, 255);
 }
 @media screen and (max-width: 600px) {
     .aside-main{
-    margin-right: 10px;
+    margin-right: 100px;
     }
+    .aside-main>p{
+      
+        margin-top: 1075px;
+       
+        }
     .noticias-pequenas{
     min-width: 300px;
     }
@@ -573,11 +583,11 @@ background-color: rgb(47, 0, 255);
 }
 @media screen and (max-width: 475px) {
     .aside-main{
-    margin-right: -90px;
+    margin-right: 50px;
     }
 }
 @media screen and (max-width: 400px) {
     .aside-main{
-    margin-right: -130px;
+    margin-right: 30px;
     }
 }

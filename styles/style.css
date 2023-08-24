@@ -47,11 +47,8 @@ main{
     margin-right: 50px;
 }
 main section{
-    background-color: blue;
-    color: white;
     font-size: 50px;
     text-align: center;
-    border: 1px solid gray;
     margin:10px;
     border-radius: 10px;
     
@@ -62,7 +59,6 @@ main section{
 }
 div,section {
     min-height: 80px;
-    borer: 1px solid red;
 }
 
 #logo {
@@ -96,7 +92,6 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid red;
     flex:1;
 
 }
@@ -233,9 +228,9 @@ nav.ativo{
     margin-left:300px;
     align-items:end;
 }
-.menu-a{
-    height: 100%;
-}
+#menu-a{
+    margin-left:100px;
+    }
 nav li a{
     display: inline-block;
     padding: 30px;
@@ -248,7 +243,7 @@ nav li a{
     position: absolute;
     display: none;
     box-shadow: 10px 5px 5px rgba(114, 114, 114, 0.767);
-    border-radius: 5%;
+    margin-top: -3px;
 }
 .menu-hover a{
     display: block;
@@ -267,6 +262,7 @@ footer{
     background-color: rgb(38, 76, 148);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
     margin-left: -320px;
     margin-right: -320px;
     height:250px
@@ -311,7 +307,7 @@ strong{
     
 }
 #noticia1{
-    outline: 3px solid black;
+    outline: 1px solid black;
     width: 400px;
     height: 250px;
     overflow: hidden;
@@ -371,6 +367,7 @@ strong{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5%;
+    border: 1px solid black;
 }
 #img6{
     background-image: url("../imagens/politica2.webp");
@@ -379,6 +376,7 @@ strong{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5%;
+    border: 1px solid black;
 }
     #img7{
         background-image: url("../imagens/esporte2.webp");
@@ -387,6 +385,7 @@ strong{
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5%;
+        border: 1px solid black;
     
     }
     #img8{
@@ -396,7 +395,7 @@ strong{
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5%;
-    
+        border: 1px solid black;
     }
 
 #noticia2{
@@ -431,7 +430,7 @@ li>p{
     position: relative;
     color:white ;
     background-color: #acacac81;
-    margin-top: -45px;
+    margin-top: -50px;
 }
 .categoria{
     display:inline-block;
@@ -440,6 +439,7 @@ li>p{
     margin-left: -130px;
     padding: 3px;
     background-color: green;
+    color: #ffffff;
     background-size: 20%;
     border-radius: 20%;
     font-size: 13px;
@@ -634,16 +634,12 @@ margin-top: 10px;
 
     #menu-a{
         width: 50vh;
-        background-color: #ffffff;
+        background-color: #ebebeb;
         margin-top: 0;
         position: absolute;
         justify-content: flex-end;
     }
-    li:hover {
-        display: block;
-        background-color: blue;
-    
-    }
+   
     #logo{
         display:none
     }
@@ -667,9 +663,13 @@ margin-top: 10px;
     #logo.ativo{
         display: none;
     }
-    .nav-link:hover{
-        background-color: rgb(47, 0, 255);
+    li:hover{
+        background-color: #9c9c9c;
     }
+    .nav-link:hover{
+    color: yellow;
+    }
+    
     .mobile-menu.open{
         background-color: rgba(255, 255, 255, 0);
         
@@ -687,6 +687,9 @@ margin-top: 10px;
     header{
         margin:0px;
     }
+    #menu-a{
+        margin-left:0px;
+        }
     .titulo-site{
         margin-left:50px;
     }
@@ -703,7 +706,7 @@ margin-top: 10px;
 
 @media screen and (max-width: 750px) {
     #noticia1 {
-        outline: 3px solid black;
+        outline: 1px solid black;
         width: 300px;
         height: 200px;
         overflow: hidden;
