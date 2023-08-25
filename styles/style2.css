@@ -31,7 +31,9 @@ color: #ffffff;
 --fonte-titulo: 'Frank Ruhl Libre', serif;
 }
 
-
+h1,p,article{
+    font-family:'Frank Ruhl Libre', serif ;
+}
 body{
 background-color: var(--cor-principal);
 color: var(--cor-texto);
@@ -278,7 +280,6 @@ padding-right: 30px;
 
 
 #noticia-principal{
-border: 1px solid black;
 height: auto;
 }
 
